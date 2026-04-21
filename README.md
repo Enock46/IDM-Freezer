@@ -79,4 +79,4 @@ MIT License
 
 Open a GitHub issue for help.
 
-Made by Enock46 | v3.0
+Made by Enock46 | v0.1

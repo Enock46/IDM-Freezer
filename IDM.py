@@ -13,7 +13,7 @@ from colorama import Fore, Style, Back, init
 # Initialize colorama
 init(autoreset=True)
 
-VERSION = "3.0"
+VERSION = "0.1"
 
 # Determine base directory for config/logs
 def get_base_dir():
