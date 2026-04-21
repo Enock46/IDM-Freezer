@@ -191,6 +191,11 @@ setlocal EnableDelayedExpansion
 
 ::========================================================================================================================================
 
+:: Skip temp folder check if running from PyInstaller bundle (_MEI folder)
+echo "!_batf!" | find /i "_MEI" %nul1% && (
+    goto skip_temp_check
+)
+
 echo "!_batf!" | find /i "!_ttemp!" %nul1% && (
 if /i not "!_work!"=="!_ttemp!" (
 %eline%
@@ -201,6 +206,8 @@ echo Extract the archive file and launch the script from the extracted folder.
 goto done2
 )
 )
+
+:skip_temp_check
 
 ::========================================================================================================================================
 
